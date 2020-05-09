@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './quiz_page.dart';
+import 'package:google_fonts/google_fonts.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -11,7 +12,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Color(0xFF0A0E21),
         scaffoldBackgroundColor: Color(0xFF0A0E21),
-        textTheme: TextTheme()
+      //   fontFamily: 'Georgia',
+      //   textTheme: TextTheme(
+          
+      // headline1: TextStyle(fontSize: 72.0, fontWeight: FontWeight.bold, color: Colors.white),
+      // headline6: TextStyle(fontSize: 36.0, fontStyle: FontStyle.italic),
+      //   ),
       ),
     );
   }
