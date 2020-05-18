@@ -55,37 +55,170 @@ class _QuizPageState extends State<QuizPage> {
                       ),
                     ],
                   ),
-                  SizedBox(height:20),
+                  SizedBox(height: 20),
                   Row(
                     children: <Widget>[
-                      Icon(Icons.check, color: Colors.greenAccent, size: 14,),
-                      Icon(Icons.check, color: Colors.greenAccent, size: 14, ),
-                      Icon(Icons.check, color: Colors.red, size: 14,),
-                      Icon(Icons.check, color: Colors.greenAccent, size: 14,),
-                      Icon(Icons.check, color: Colors.greenAccent, size: 14,),
-                      Icon(Icons.check, color: Colors.red, size: 14,),
-                      Icon(Icons.check, color: Colors.greenAccent, size: 14,),
-                      Icon(Icons.check, color: Colors.red, size: 14,),
-                      Icon(Icons.check, color: Colors.greenAccent, size: 14,),
-                      Icon(Icons.check, color: Colors.greenAccent, size: 14,),
-                      Icon(Icons.check, color: Colors.greenAccent, size: 14,),
-                      Icon(Icons.check, color: Colors.greenAccent, size: 14,),
-                      Icon(Icons.check, color: Colors.greenAccent, size: 14,),
-                      Icon(Icons.check, color: Colors.red, size: 14,),
-                      Icon(Icons.check, color: Colors.greenAccent, size: 14,),
-                      Icon(Icons.check, color: Colors.greenAccent, size: 14,),
-                      Icon(Icons.check, color: Colors.red, size: 14,),
-                      Icon(Icons.check, color: Colors.greenAccent, size: 14,),
-                      Icon(Icons.check, color: Colors.greenAccent, size: 14,),
-                      Icon(Icons.check, color: Colors.greenAccent, size: 14,),
+                      Icon(
+                        Icons.check,
+                        color: Colors.greenAccent,
+                        size: 16,
+                      ),
+                      Icon(
+                        Icons.check,
+                        color: Colors.greenAccent,
+                        size: 16,
+                      ),
+                      Icon(
+                        Icons.check,
+                        color: Colors.red,
+                        size: 16,
+                      ),
+                      Icon(
+                        Icons.check,
+                        color: Colors.greenAccent,
+                        size: 16,
+                      ),
+                      Icon(
+                        Icons.check,
+                        color: Colors.greenAccent,
+                        size: 16,
+                      ),
+                      Icon(
+                        Icons.check,
+                        color: Colors.red,
+                        size: 16,
+                      ),
+                      Icon(
+                        Icons.check,
+                        color: Colors.greenAccent,
+                        size: 16,
+                      ),
+                      Icon(
+                        Icons.check,
+                        color: Colors.red,
+                        size: 16,
+                      ),
+                      Icon(
+                        Icons.check,
+                        color: Colors.greenAccent,
+                        size: 16,
+                      ),
+                      Icon(
+                        Icons.check,
+                        color: Colors.greenAccent,
+                        size: 16,
+                      ),
+                      Icon(
+                        Icons.check,
+                        color: Colors.greenAccent,
+                        size: 16,
+                      ),
+                      Icon(
+                        Icons.check,
+                        color: Colors.greenAccent,
+                        size: 16,
+                      ),
+                      Icon(
+                        Icons.check,
+                        color: Colors.greenAccent,
+                        size: 16,
+                      ),
+                      Icon(
+                        Icons.check,
+                        color: Colors.red,
+                        size: 16,
+                      ),
+                      Icon(
+                        Icons.check,
+                        color: Colors.greenAccent,
+                        size: 16,
+                      ),
+                      Icon(
+                        Icons.check,
+                        color: Colors.greenAccent,
+                        size: 16,
+                      ),
+                      Icon(
+                        Icons.check,
+                        color: Colors.red,
+                        size: 16,
+                      ),
+                      Icon(
+                        Icons.check,
+                        color: Colors.greenAccent,
+                        size: 16,
+                      ),
+                      Icon(
+                        Icons.check,
+                        color: Colors.greenAccent,
+                        size: 16,
+                      ),
+                      Icon(
+                        Icons.check,
+                        color: Colors.greenAccent,
+                        size: 16,
+                      ),
                     ],
-                  )
-                ],
+                  ),
+                  SizedBox(
+                    height: 40,
+                  ),
+                  Row(
+                    children: <Widget>[
+                      Expanded(
+                        child: Container(
+                          child: Text(
+                            'The graphs of the two linear equations ax + by = c and bx - ay = c, where a, b and c are all not equal to zero.',
+                            style: TextStyle(
+                                fontWeight: FontWeight.w100,
+                                fontSize: 18,
+                                height: 1.6,
+                                color: Colors.white),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 50,),
+
+                  AnswerButtons(),
+                  AnswerButtons(),
+                  AnswerButtons(),
+                  AnswerButtons(), ],
               ),
             )
           ],
         ),
       ),
     );
+  }
+}
+
+class AnswerButtons extends StatelessWidget {
+  const AnswerButtons({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(padding: EdgeInsets.all(8.0),
+    child: OutlineButton(onPressed: (){},
+    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+     borderSide: BorderSide(color: Colors.white12),
+    child: Row(
+            children: [
+              Text('perpendicular',
+                style: TextStyle(
+      fontWeight: FontWeight.w100,
+      fontSize: 12,
+      height: 1.6,
+      color: Colors.white),
+              ), 
+              
+              ],
+    
+    ),
+    ),
+     );
   }
 }
