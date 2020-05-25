@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './answerbuttons.dart';
 
 class QuizPage extends StatefulWidget {
   @override
@@ -161,7 +162,7 @@ class _QuizPageState extends State<QuizPage> {
                     ],
                   ),
                   SizedBox(
-                    height: 40,
+                    height: 30,
                   ),
                   Row(
                     children: <Widget>[
@@ -179,46 +180,41 @@ class _QuizPageState extends State<QuizPage> {
                       ),
                     ],
                   ),
-                  SizedBox(height: 50,),
-
+                  SizedBox(
+                    height: 40,
+                  ),
                   AnswerButtons(),
                   AnswerButtons(),
                   AnswerButtons(),
-                  AnswerButtons(), ],
+                  AnswerButtons(),
+                  SizedBox(height: 40),
+                  Row(
+                    children: <Widget>[
+                      FlatButton(
+                        onPressed: () {},
+                        child: Text('Quit quiz'),
+                      ),
+                      Spacer(),
+                      Container(
+                        height: 50,
+                        width: 120,
+                        child: FlatButton(
+                          color: Colors.cyan,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          onPressed: () {},
+                          child: Text('Next'),
+                        ),
+                      )
+                    ],
+                  )
+                ],
               ),
             )
           ],
         ),
       ),
     );
-  }
-}
-
-class AnswerButtons extends StatelessWidget {
-  const AnswerButtons({
-    Key key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(padding: EdgeInsets.all(8.0),
-    child: OutlineButton(onPressed: (){},
-    shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-     borderSide: BorderSide(color: Colors.white12),
-    child: Row(
-            children: [
-              Text('perpendicular',
-                style: TextStyle(
-      fontWeight: FontWeight.w100,
-      fontSize: 12,
-      height: 1.6,
-      color: Colors.white),
-              ), 
-              
-              ],
-    
-    ),
-    ),
-     );
   }
 }
